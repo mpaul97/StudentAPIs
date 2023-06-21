@@ -41,4 +41,10 @@ public class StudentController {
         return this.studentService.addStudent(student);
     }
 
+    @DeleteMapping("deleteAll")
+    public String deleteAllStudents() {
+        this.studentService.deleteAllStudents();
+        return "Deleted all students.";
+    }
+
 }

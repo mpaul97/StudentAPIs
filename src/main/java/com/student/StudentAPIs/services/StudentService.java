@@ -30,4 +30,8 @@ public class StudentService {
         return this.studentRepository.save(student);
     };
 
+    public void deleteAllStudents() {
+        this.studentRepository.deleteAll();
+    }
+
 }
